@@ -1,0 +1,6 @@
+streamlit>=1.36
+reportlab>=4.2
+pypdf>=4.2
+pypdfium2>=4.30
+pillow>=10.0
+pandas>=2.0
