@@ -153,11 +153,6 @@ def render_hero():
         """
         <div class="panel" style="margin-bottom:1.1rem;">
             <div class="hero-title">TKIET Result Ledger Studio</div>
-            <div class="hero-sub">
-                Drag &amp; drop a semester-results CSV export &rarr; download the institute-style
-                A3 landscape PDF ledger, ready to print. Everything is processed in memory &mdash;
-                nothing is stored.
-            </div>
             <div>
                 <span class="chip">&#9889; Drag &amp; drop</span>
                 <span class="chip">&#128196; A3 vector PDF</span>
@@ -242,22 +237,6 @@ with st.sidebar:
         <div class="step-line"><b>4.</b> Hit <b>Generate</b> and download the A3 ledger</div>
         """,
         unsafe_allow_html=True,
-    )
-
-    st.markdown("### 🚀 Host your own copy")
-    st.markdown(
-        """
-        1. Push this folder to a **GitHub** repo
-        2. Open [share.streamlit.io](https://share.streamlit.io)
-        3. **New app** &rarr; pick the repo, branch `main`, file `app.py`
-        4. Click **Deploy** - done, no config needed
-        """
-    )
-
-    st.markdown("### ℹ️ Engine notes")
-    st.caption(
-        "A3 landscape · ReportLab vector output · 10 students per page max · "
-        "elective subjects with no marks render as “--” · fails and absences are highlighted red."
     )
 
 # --------------------------------------------------------------------------- #
@@ -364,14 +343,6 @@ with side_col:
             and SGPA. Failed subjects and <i>NOT ALL CLEAR</i> states are red.
             </div>
             """,
-            unsafe_allow_html=True,
-        )
-
-    with st.container(border=True):
-        st.markdown('<div class="card-title">🧪 Try it safely</div>', unsafe_allow_html=True)
-        st.markdown(
-            '<div class="muted">Tick <b>“Use the bundled sample export”</b> to test the full '
-            "flow with 20 real-format records before uploading your own data.</div>",
             unsafe_allow_html=True,
         )
 
